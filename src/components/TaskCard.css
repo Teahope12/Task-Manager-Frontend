@@ -1,0 +1,112 @@
+.task-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.task-card.editing {
+  border: 2px solid #667eea;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.task-header h3 {
+  color: #2d3748;
+  font-size: 1.125rem;
+}
+
+.task-badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.status-badge, .priority-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.priority-low {
+  background: #48bb78;
+}
+
+.priority-medium {
+  background: #ed8936;
+}
+
+.priority-high {
+  background: #f56565;
+}
+
+.task-description {
+  color: #718096;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.task-footer small {
+  color: #a0aec0;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-edit, .btn-delete, .btn-save, .btn-cancel {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background: #4299e1;
+  color: white;
+}
+
+.btn-delete {
+  background: #f56565;
+  color: white;
+}
+
+.btn-save {
+  background: #48bb78;
+  color: white;
+}
+
+.btn-cancel {
+  background: #a0aec0;
+  color: white;
+}
+
+.task-card input, 
+.task-card textarea, 
+.task-card select {
+  margin-bottom: 0.75rem;
+}
